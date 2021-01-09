@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8409466b-428c-4b80-a93c-b8849b26f934" name="Default Changelist" comment="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish">
+      <change afterPath="$PROJECT_DIR$/GUI.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configControl/confParser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configControl/confParserErrinjMode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configControl/confParserLM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/operations/operationsTypes/shutdown.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/operations/operationsTypes/turnOnWithLan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/viewGui.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI/viewGui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configControl/TestConfig.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configControl/confFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/configControl/confFile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configControl/configControlUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configControl/configParser.py" beforeDir="false" afterPath="$PROJECT_DIR$/configControl/configParser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllerPc.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllerPc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hostPcTestEnvClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/hostPcTestEnvClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations/allOperations.py" beforeDir="false" afterPath="$PROJECT_DIR$/operations/allOperations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations/operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/operations/operation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations/operationsTypes/hibernate.py" beforeDir="false" afterPath="$PROJECT_DIR$/operations/operationsTypes/hibernate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations/operationsTypes/powerOff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations/operationsTypes/powerOnWithLan.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations/operationsTypes/runCommandViaCmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/operations/operationsTypes/runCommandViaCmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations/operationsTypes/sleep.py" beforeDir="false" afterPath="$PROJECT_DIR$/operations/operationsTypes/sleep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations/operationsTypes/wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/operations/operationsTypes/wait.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Elad Ben Atar &lt;elad1593210@gmail.com&gt;" />
+        <option value="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1joY5enO627jMrf5HWBCPnLdrOc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/configControl" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\autoLatencyApp\configControl" />
+      <recent name="C:\Projects\autoLatencyApp" />
+      <recent name="C:\Projects\autoLatencyApp\operations\operationsTypes" />
+      <recent name="C:\Projects\autoLatencyApp\UI" />
+      <recent name="C:\Projects\autoLatencyApp\configControl\configTypes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\autoLatencyApp\configControl" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.viewGui">
+    <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="autoLatencyApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="controllerPc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="autoLatencyApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/controllerPc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="powerOnWithLan" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="autoLatencyApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/operations/operationsTypes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Projects\autoLatencyApp\operations\operationsTypes\turnOnWithLan.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pyuic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="autoLatencyApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/PyQt5/uic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/PyQt5/uic/pyuic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="viewGui" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="autoLatencyApp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI/viewGui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.viewGui" />
+        <item itemvalue="Python.GUI" />
+        <item itemvalue="Python.pyuic" />
+        <item itemvalue="Python.powerOnWithLan" />
+        <item itemvalue="Python.controllerPc" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8409466b-428c-4b80-a93c-b8849b26f934" name="Default Changelist" comment="" />
+      <created>1604471729286</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604471729286</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish">
+      <created>1605549595814</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605549595815</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/configControl/configParser.py</url>
+          <line>200</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/configControl/configParser.py</url>
+          <line>208</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/configControl/configParser.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/configControl/confParser.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/operations/operationsTypes/wait.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/controllerPc.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="testStatusErrinj" />
+        <watch expression="testStatusErrinj" />
+        <watch expression="testStatusErrinj" />
+        <watch expression="dictsfromparsing" />
+        <watch expression="testsByGroupLegacyFlowOperations" />
+        <watch expression="dictsfromparsing.testsByGroupLegacyFlowOperations.'Hermes' (62317504)" language="Python" />
+        <watch expression="dictsfromparsing.legacyFlowOperationsTestsByGroups.'Hermes' (65198784)" />
+        <watch expression="testConfiguration" />
+        <watch expression="dictsfromparsing.legacyFlowOperationsTestsByGroups.'Hermes' (70055680)[1]" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

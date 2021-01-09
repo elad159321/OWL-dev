@@ -1,0 +1,2 @@
+class powerOnWithClicker():
+    pass
