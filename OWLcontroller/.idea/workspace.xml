@@ -55,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.turnOnWithLan">
+  <component name="RunManager" selected="Python.controllerPc">
     <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autoLatencyApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,10 +163,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.turnOnWithLan" />
         <item itemvalue="Python.controllerPc" />
         <item itemvalue="Python.viewGui" />
         <item itemvalue="Python.GUI" />
+        <item itemvalue="Python.turnOnWithLan" />
         <item itemvalue="Python.pyuic" />
       </list>
     </recent_temporary>
@@ -236,11 +236,6 @@
           <url>file://$PROJECT_DIR$/operations/operationsTypes/wait.py</url>
           <line>10</line>
           <option name="timeStamp" value="174" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/controllerPc.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="175" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

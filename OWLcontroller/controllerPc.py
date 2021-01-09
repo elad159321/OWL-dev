@@ -2,7 +2,7 @@ import configparser
 from configControl.confParser import confParser
 from configControl.confParserLM import confParserLM
 from hostPcTestEnvClient import hostPcTestEnvClient
-
+from UI.viewGui import *
 
 class controllerPc():
     def __init__(self):
@@ -16,7 +16,10 @@ class controllerPc():
         #                                      , 'shutdown', 'sleep', 'hibernate',
         #                                      {'operation': 'wait', 'param': "5"}])
 
+
         hostPcTestEnvClient().runSequanceOfOperations(self.legacyFlowOperationsTestsByGroups['Hermes'][1].flowoperations)
+
+
 
 
 

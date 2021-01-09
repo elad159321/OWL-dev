@@ -15,8 +15,8 @@
 		"hostPCs":
 					[
 						{
-							"IP" : "IP/URL",
-							"groupName" : "GROUP",
+							"IP" : "10.100.102.14",
+							"groupName" : "Calypso",
 							"tests" :	["test1", "test2", "test3"]
 						},
 						{
