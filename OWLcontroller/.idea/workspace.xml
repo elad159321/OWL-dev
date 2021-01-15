@@ -55,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.controllerPc">
+  <component name="RunManager" selected="Python.powerOnWithClicker">
     <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autoLatencyApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,7 +98,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pyuic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="powerOnWithClicker" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autoLatencyApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,11 +106,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/PyQt5/uic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/operations/operationsTypes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/PyQt5/uic/pyuic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/operations/operationsTypes/powerOnWithClicker.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.controllerPc" />
+        <item itemvalue="Python.powerOnWithClicker" />
         <item itemvalue="Python.viewGui" />
+        <item itemvalue="Python.controllerPc" />
         <item itemvalue="Python.GUI" />
         <item itemvalue="Python.turnOnWithLan" />
-        <item itemvalue="Python.pyuic" />
       </list>
     </recent_temporary>
   </component>
@@ -236,6 +236,11 @@
           <url>file://$PROJECT_DIR$/operations/operationsTypes/wait.py</url>
           <line>10</line>
           <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/controllerPc.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="177" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
