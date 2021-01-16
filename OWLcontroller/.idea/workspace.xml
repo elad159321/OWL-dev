@@ -55,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.powerOnWithClicker">
+  <component name="RunManager" selected="Python.turnOnWithLan">
     <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autoLatencyApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.turnOnWithLan" />
         <item itemvalue="Python.powerOnWithClicker" />
         <item itemvalue="Python.viewGui" />
         <item itemvalue="Python.controllerPc" />
         <item itemvalue="Python.GUI" />
-        <item itemvalue="Python.turnOnWithLan" />
       </list>
     </recent_temporary>
   </component>
