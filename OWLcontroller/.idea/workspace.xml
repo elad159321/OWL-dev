@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8409466b-428c-4b80-a93c-b8849b26f934" name="Default Changelist" comment="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish" />
+    <list default="true" id="8409466b-428c-4b80-a93c-b8849b26f934" name="Default Changelist" comment="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish">
+      <change beforePath="$PROJECT_DIR$/../OWLhostPC/operations/operationsTypes/runDM.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OWLhostPC/operations/operationsTypes/runDM.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

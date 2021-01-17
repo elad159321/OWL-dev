@@ -1,6 +1,16 @@
+import os
+import subprocess
+
 import psutil
+CMD_COMMAND = 'cmd /k '
+RUN_DM = r'DriveMaster.exe /s:C:\Users\QA\Desktop\Tests\L1.2_Entry_Exit_PS4_Calypso.srt /1:log.txt /e'
+#RUN_DM = 'DriveMaster'
 class runDM():
 
+    @staticmethod
+    def runOp():
+        os.system(CMD_COMMAND + RUN_DM)
+        #subprocess.run([RUN_DM], stdout=subprocess.PIPE).stdout.decode('utf-8')
     @staticmethod
     def checkIfProcessRunning(processName):
         '''
@@ -26,3 +36,4 @@ else:
 
 
 
+runDM.runOp()
