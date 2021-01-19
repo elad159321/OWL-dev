@@ -1,16 +1,27 @@
 import os
 import subprocess
-
 import psutil
 CMD_COMMAND = 'cmd /k '
-RUN_DM = r'DriveMaster.exe /s:C:\Users\QA\Desktop\Tests\L1.2_Entry_Exit_PS4_Calypso.srt /1:log.txt /e'
-#RUN_DM = 'DriveMaster'
+DM_SCRIPT_NAME = 'L1.2_Entry_Exit_PS4_Calypso.srt'
+DM_SCRIPT_PATH = 'C:\OWL\OWL-dev\OWLhostPC\DM_scripts\\'
+RUN_DM = r'DriveMaster.exe /s:' + DM_SCRIPT_PATH + DM_SCRIPT_NAME + ' /1:log.txt /e'
+#DriveMaster.exe /s:C:\OWL\OWL-dev\OWLhostPC\DM_scripts\L1.2_Entry_Exit_PS4_Calypso.srt/1:log.txt /e
+
 class runDM():
 
     @staticmethod
     def runOp():
-        os.system(CMD_COMMAND + RUN_DM)
-        #subprocess.run([RUN_DM], stdout=subprocess.PIPE).stdout.decode('utf-8')
+        #os.system(CMD_COMMAND + RUN_DM)
+        command = RUN_DM
+        run = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stdin=None, stderr=subprocess.PIPE,
+                               env=os.environ, universal_newlines=True)
+        returncode = run.communicate()  ## HANGS HERE ##
+
+        if runDM().checkIfProcessRunning('DriveMaster'):
+            print('A DriveMaster process is running')
+        else:
+            print('A DriveMaster process is not running')
+
     @staticmethod
     def checkIfProcessRunning(processName):
         '''
@@ -25,15 +36,6 @@ class runDM():
             except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
                 pass
         return False
-
-
-# Check if any chrome process was running or not.
-
-if runDM().checkIfProcessRunning('chrome'):
-    print('Yes a chrome process was running')
-else:
-    print('No chrome process is not running')
-
 
 
 runDM.runOp()
