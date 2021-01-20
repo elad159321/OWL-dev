@@ -1,6 +1,6 @@
 from operations.operation import operation
 from operations.operationsTypes.powerOnWithClicker import powerOnWithClicker
-from operations.operationsTypes.runDm import runDM
+# from operations.operationsTypes.runDm import runDM
 from operations.operationsTypes.turnOnWithLan import turnOnWithLan
 from operations.operationsTypes.wait import wait
 from operations.operationsTypes.hibernate import hibernate

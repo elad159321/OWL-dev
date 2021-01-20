@@ -12,7 +12,8 @@
 				"param" : "ipconfig"
 			},
 			
-			"powerOnWithClicker"
+			"powerOnWithClicker",
+			"hibernate"
 			
 		
 

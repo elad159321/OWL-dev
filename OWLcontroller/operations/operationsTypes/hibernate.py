@@ -9,12 +9,12 @@ class hibernate(operation):
         pass
 
     @staticmethod
-    def runOp(clientSocket, *args):
+    def runOp(opParams):
 
         messegeToServer = {"operation": "hibernate", "param": SLEEP_COMMAND}
-        clientSocket.sendall(json.dumps(messegeToServer).encode('utf-8'))  # encode the dict to JSON
-        messegeFromServer = clientSocket.recv(1024).decode()  # receive response from the server
-
+        opParams.socket.sendall(json.dumps(messegeToServer).encode('utf-8'))  # encode the dict to JSON
+        messegeFromServer = opParams.socket.recv(1024).decode()  # receive response from the server
+        opParams.socket.close()
         # sending a ping in order to verify the shutdown
         # pingCommand = PING + host
         # if (os.system(pingCommand)) == 0:
