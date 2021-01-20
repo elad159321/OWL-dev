@@ -6,7 +6,7 @@
 				"operation" : "runCommandViaCmd",
 				"param" : "ipconfig"
 			},
-			"hibernate"
+			"sleep"
 		
 
 			]
