@@ -28,9 +28,9 @@ class turnOnWithLan(operation):
         # pinging the host for checking if its on
         currentIpAdress = [HOST_NAME]
         for each in currentIpAdress:
-            # if turnOnWithLan.pingIP(each):
-            #     print(f"{each} Host Pc is available")
-            # else:
+            if turnOnWithLan.pingIP(each):
+                print(f"{each} Host Pc is available")
+            else:
                 print(f"{each}  HOST Pc is not available")
                 # wake on lan
                 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)

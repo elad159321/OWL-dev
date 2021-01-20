@@ -55,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.turnOnWithLan">
+  <component name="RunManager" selected="Python.controllerPc">
     <configuration name="controllerPc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autoLatencyApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,8 +163,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.turnOnWithLan" />
         <item itemvalue="Python.controllerPc" />
+        <item itemvalue="Python.turnOnWithLan" />
         <item itemvalue="Python.hostPcTestEnvClient" />
         <item itemvalue="Python.powerOnWithClicker" />
         <item itemvalue="Python.viewGui" />
