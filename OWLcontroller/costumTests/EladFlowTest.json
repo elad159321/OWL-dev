@@ -1,17 +1,17 @@
 {
 		"operationsList":
 			[
-				"shutdown",
+				
 			{
-				"operation" : "wait",
-				"param" : "5"
+				"operation" : "runCommandViaCmd",
+				"param" : "ipconfig"
 			},
 			
 			{
 				"operation" : "runCommandViaCmd",
 				"param" : "ipconfig"
 			},
-				"sleep"
+				"shutdown"
 
 			]
 			

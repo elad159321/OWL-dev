@@ -2,8 +2,8 @@ import os
 from operations.operation import operation
 import json
 PING = 'ping '
-SHUTDOWN_COMMAND = "shutdown command request from client"
-#SHUTDOWN_COMMAND = "shutdown /s /t 1"
+#SHUTDOWN_COMMAND = "shutdown command request from client"
+SHUTDOWN_COMMAND = "shutdown /s /t 1"
 class shutdown(operation):
     def getKey(self):
         pass

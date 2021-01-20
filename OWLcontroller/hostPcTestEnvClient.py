@@ -6,14 +6,25 @@ from operations.allOperations import allOperations
 
 class hostPcTestEnvClient():
 
+#when the server and client is teh same one
+    # def createCommunication(self):
+    #     CommunicationInfo = namedtuple('CommunicationInfo' , ['socket', 'hostIP'])
+    #     host = socket.gethostname()  # as both code is running on same pc
+    #     port = 5000  # socket server port number
+    #     clientSocket = socket.socket()  # instantiate
+    #     clientSocket.connect((host, port))  # connect to the server
+    #     CommunicationInfo.socket =clientSocket
+    #     CommunicationInfo.hostIP = host
+    #     return CommunicationInfo
+
+
     def createCommunication(self):
         CommunicationInfo = namedtuple('CommunicationInfo' , ['socket', 'hostIP'])
-        host = socket.gethostname()  # as both code is running on same pc
         port = 5000  # socket server port number
         clientSocket = socket.socket()  # instantiate
-        clientSocket.connect((host, port))  # connect to the server
+        clientSocket.connect(('10.100.102.22', port))  # connect to the server
         CommunicationInfo.socket =clientSocket
-        CommunicationInfo.hostIP = host
+        CommunicationInfo.hostIP = '10.100.102.22'
         return CommunicationInfo
 
     def closeCommunication(self, client_socket):
@@ -39,7 +50,7 @@ class hostPcTestEnvClient():
     def runSequanceOfOperations(self, operations):
         ' This method gets a list from the ControlPC which conatins  operations names, if the operation needs sspecific params, it will be saved in the list as a dict (key = operation name, value = operation parameters) '
 
-        # clientSocket = self.createCommunication()
+        #clientSocket = self.createCommunication()
 
         for operation in operations:
             CommunicationInfo = self.createCommunication()
@@ -62,7 +73,9 @@ class hostPcTestEnvClient():
 if __name__ == '__main__':
     # example for Control Pc request to run a sequance of commands
     exampleListOfOperationsFromConfigfile = [{'operation': 'runCommandViaCmd', 'param': "ipconfig"}
-                                             , 'shutdown', 'sleep', 'hibernate',
+                                             , 'shutdown',
+                                             'sleep',
+                                             'hibernate',
                                              {'operation': 'wait', 'param': "5"}]
 
     hostPcTestEnvClient().runSequanceOfOperations(exampleListOfOperationsFromConfigfile)
