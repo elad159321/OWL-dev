@@ -17,7 +17,8 @@ class shutdown(operation):
 
         # sending a ping in order to verify the shutdown
         pingCommand = PING + host
-        if (os.system(pingCommand)) == 0:
-            print ("alive")
-
+        while (os.system(pingCommand)) == 0:
+            print ("Host still alive")
+        if (os.system(pingCommand)) != 0:
+            print ("shoutdown was done")
         return ('Received from server: ' + messegeFromServer)  # show the response in terminal

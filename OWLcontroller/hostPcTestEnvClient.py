@@ -18,13 +18,13 @@ class hostPcTestEnvClient():
     #     return CommunicationInfo
 
 
-    def createCommunication(self):
+    def createCommunication(self, hostIp, hostPort):
         CommunicationInfo = namedtuple('CommunicationInfo' , ['socket', 'hostIP'])
-        port = 5000  # socket server port number
+        port = hostPort  # socket server port number
         clientSocket = socket.socket()  # instantiate
-        clientSocket.connect(('10.100.102.22', port))  # connect to the server
+        clientSocket.connect((hostIp, port))  # connect to the server
         CommunicationInfo.socket =clientSocket
-        CommunicationInfo.hostIP = '10.100.102.22'
+        CommunicationInfo.hostIP = hostIp
         return CommunicationInfo
 
     def closeCommunication(self, client_socket):
@@ -47,13 +47,13 @@ class hostPcTestEnvClient():
     #     self.closeCommunication(client_socket)
 
 
-    def runSequanceOfOperations(self, operations):
+    def runSequanceOfOperations(self, operations,hostIP,port):
         ' This method gets a list from the ControlPC which conatins  operations names, if the operation needs sspecific params, it will be saved in the list as a dict (key = operation name, value = operation parameters) '
 
         #clientSocket = self.createCommunication()
 
         for operation in operations:
-            CommunicationInfo = self.createCommunication()
+            CommunicationInfo = self.createCommunication(hostIP,port)
             clientSocket = CommunicationInfo.socket
             message = operation  # The messege to the server
 

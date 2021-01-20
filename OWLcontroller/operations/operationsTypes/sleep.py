@@ -1,8 +1,8 @@
 from operations.operation import operation
 import json
 PING = 'ping '
-SLEEP_COMMAND ="sleep command request from client"
-#SLEEP_COMMAND = 'rundll32.exe powrprof.dll,SetSuspendState 0,1,0'
+#SLEEP_COMMAND ="sleep command request from client"
+SLEEP_COMMAND = 'rundll32.exe powrprof.dll,SetSuspendState 0,1,0'
 
 class sleep(operation):
     def getKey(self):

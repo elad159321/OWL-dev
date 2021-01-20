@@ -1,8 +1,8 @@
 from operations.operation import operation
 import json
 PING = 'ping '
-SLEEP_COMMAND ="hibernate command request from client new"
-#SLEEP_COMMAND = 'shutdown /h'
+#SLEEP_COMMAND ="hibernate command request from client new"
+SLEEP_COMMAND = 'shutdown /h'
 
 class hibernate(operation):
     def getKey(self):

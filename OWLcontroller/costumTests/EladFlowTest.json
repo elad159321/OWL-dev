@@ -6,12 +6,8 @@
 				"operation" : "runCommandViaCmd",
 				"param" : "ipconfig"
 			},
-			
-			{
-				"operation" : "runCommandViaCmd",
-				"param" : "ipconfig"
-			},
-				"shutdown"
+			"hibernate"
+		
 
 			]
 			

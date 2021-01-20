@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8409466b-428c-4b80-a93c-b8849b26f934" name="Default Changelist" comment="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish">
-      <change beforePath="$PROJECT_DIR$/../OWLhostPC/operations/operationsTypes/shutdown.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OWLhostPC/operations/operationsTypes/shutdown.py" afterDir="false" />
-    </list>
+    <list default="true" id="8409466b-428c-4b80-a93c-b8849b26f934" name="Default Changelist" comment="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.controllerPc">
+  <component name="RunManager" selected="Python.turnOnWithLan">
     <configuration name="controllerPc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autoLatencyApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -165,9 +163,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.turnOnWithLan" />
         <item itemvalue="Python.controllerPc" />
         <item itemvalue="Python.hostPcTestEnvClient" />
-        <item itemvalue="Python.turnOnWithLan" />
         <item itemvalue="Python.powerOnWithClicker" />
         <item itemvalue="Python.viewGui" />
       </list>
@@ -243,6 +241,11 @@
           <url>file://$PROJECT_DIR$/controllerPc.py</url>
           <line>19</line>
           <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/operations/operationsTypes/shutdown.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="181" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
