@@ -24,9 +24,10 @@ class turnOnWithLan(operation):
 
 
     @staticmethod
-    def runOp(HOST_NAME = '10.100.102.14',MAC_ADRESS = b'\x10\x65\x30\x2B\xE5\x87'):
+    def runOp(opParams):
+        opParams.macAdress = b'\x10\x65\x30\x2B\xE5\x87'
         # pinging the host for checking if its on
-        currentIpAdress = [HOST_NAME]
+        currentIpAdress = [opParams.hostIP]
         for each in currentIpAdress:
             if turnOnWithLan.pingIP(each):
                 print(f"{each} Host Pc is available")
@@ -34,9 +35,9 @@ class turnOnWithLan(operation):
                 print(f"{each}  HOST Pc is not available")
                 # wake on lan
                 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-                s.sendto(b'\xff' * 6 + MAC_ADRESS * 16,  #Host Pc MAC adress
-                         (HOST_NAME, 80)) # Host Pc IP
+                s.sendto(b'\xff' * 6 + opParams.macAdress * 16,  #Host Pc MAC adress
+                         (opParams.hostIP, 80)) # Host Pc IP
                 # Wake on lan Working
 
 
-turnOnWithLan.runOp()
+# turnOnWithLan.runOp()

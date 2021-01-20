@@ -9,14 +9,14 @@ class shutdown(operation):
         pass
 
     @staticmethod
-    def runOp(client_socket, host='empty'):
+    def runOp(hostinfo):
 
         messegeToServer = {"operation": "shutdown", "param": SHUTDOWN_COMMAND}
-        client_socket.sendall(json.dumps(messegeToServer).encode('utf-8'))  # encode the dict to JSON
-        messegeFromServer = client_socket.recv(1024).decode()  # receive response from the server
+        hostinfo.socket.sendall(json.dumps(messegeToServer).encode('utf-8'))  # encode the dict to JSON
+        messegeFromServer = hostinfo.socket.recv(1024).decode()  # receive response from the server
 
         # sending a ping in order to verify the shutdown
-        pingCommand = PING + host
+        pingCommand = PING + hostinfo.hostIP
         while (os.system(pingCommand)) == 0:
             print ("Host still alive")
         if (os.system(pingCommand)) != 0:

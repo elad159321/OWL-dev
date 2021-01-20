@@ -13,13 +13,13 @@ class powerOnWithClicker(operation):
         return (type(self).__name__)
 
     @staticmethod
-    def runOp(COM, channel):
-        os.system("echo "+ powerOnWithClicker.CLICKER_CHANNEL_COMMANDS[channel][0] +" > " + COM)
+    def runOp(hostinfo):
+        os.system("echo "+ powerOnWithClicker.CLICKER_CHANNEL_COMMANDS[hostinfo.channel][0] +" > " + hostinfo.com)
         time.sleep(0.5)
-        os.system("echo "+ powerOnWithClicker.CLICKER_CHANNEL_COMMANDS[channel][1] +" > " + COM)
+        os.system("echo "+ powerOnWithClicker.CLICKER_CHANNEL_COMMANDS[hostinfo.channel][1] +" > " + hostinfo.com)
 
-powerOnWithClicker.runOp('COM4', 1)
-powerOnWithClicker.runOp('COM4', 2)
-powerOnWithClicker.runOp('COM4', 3)
-powerOnWithClicker.runOp('COM4', 4)
+# powerOnWithClicker.runOp('COM4', 1)
+# powerOnWithClicker.runOp('COM4', 2)
+# powerOnWithClicker.runOp('COM4', 3)
+# powerOnWithClicker.runOp('COM4', 4)
 

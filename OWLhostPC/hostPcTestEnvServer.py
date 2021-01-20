@@ -3,6 +3,8 @@ from operations.allOperations import allOperations
 from operations.operationsTypes.runCommandViaCmd import runCommandViaCMD
 import json
 
+
+
 def server_program():
     while True:
         # get the hostname

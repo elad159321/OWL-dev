@@ -1,12 +1,19 @@
 {
 		"operationsList":
 			[
-				
+				"turnOnWithLan",
+			{
+				"operation" : "wait",
+				"param" : "5"
+			},
+			
 			{
 				"operation" : "runCommandViaCmd",
 				"param" : "ipconfig"
 			},
-			"hibernate"
+			
+			"powerOnWithClicker"
+			
 		
 
 			]

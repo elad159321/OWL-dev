@@ -47,24 +47,32 @@ class hostPcTestEnvClient():
     #     self.closeCommunication(client_socket)
 
 
-    def runSequanceOfOperations(self, operations,hostIP,port):
+    def runSequanceOfOperations(self, operations,hostIP,port,com,channel):
         ' This method gets a list from the ControlPC which conatins  operations names, if the operation needs sspecific params, it will be saved in the list as a dict (key = operation name, value = operation parameters) '
 
+
+        opParams = namedtuple('opParams' , ['socket', 'hostIP','port','com','channel','paramForOperation'])
         #clientSocket = self.createCommunication()
 
         for operation in operations:
             CommunicationInfo = self.createCommunication(hostIP,port)
             clientSocket = CommunicationInfo.socket
+            opParams.socket = clientSocket
+            opParams.hostIP = hostIP
+            opParams.port = port
+            opParams.com = com
+            opParams.channel = channel
             message = operation  # The messege to the server
 
             if isinstance(operation, dict):
                 mappedOperations = allOperations()
-                operationOutPut = mappedOperations.operationsImplement[operation['operation']].runOp(clientSocket, operation['param'])
+                opParams.paramForOperation = operation['param']
+                operationOutPut = mappedOperations.operationsImplement[operation['operation']].runOp(opParams)
                 print (operationOutPut)
 
             elif isinstance(operation, str):
                 mappedOperations = allOperations()
-                operationOutPut = mappedOperations.operationsImplement[operation].runOp(clientSocket, CommunicationInfo.hostIP)
+                operationOutPut = mappedOperations.operationsImplement[operation].runOp(opParams)
                 print(operationOutPut)
 
             self.closeCommunication(clientSocket)

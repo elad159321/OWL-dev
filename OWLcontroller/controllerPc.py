@@ -17,7 +17,7 @@ class controllerPc():
         #                                      {'operation': 'wait', 'param': "5"}])
 
 
-        hostPcTestEnvClient().runSequanceOfOperations(self.legacyFlowOperationsTestsByGroups['Hermes'][1].flowoperations, '10.100.102.22', 5000)
+        hostPcTestEnvClient().runSequanceOfOperations(self.legacyFlowOperationsTestsByGroups['Hermes'][1].flowoperations, '10.100.102.22', 5000, 'COM4', 1)
 
 
 

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8409466b-428c-4b80-a93c-b8849b26f934" name="Default Changelist" comment="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish" />
+    <list default="true" id="8409466b-428c-4b80-a93c-b8849b26f934" name="Default Changelist" comment="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish">
+      <change beforePath="$PROJECT_DIR$/../OWLhostPC/hostPcTestEnvServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OWLhostPC/hostPcTestEnvServer.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,10 +166,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.controllerPc" />
+        <item itemvalue="Python.viewGui" />
         <item itemvalue="Python.turnOnWithLan" />
         <item itemvalue="Python.hostPcTestEnvClient" />
         <item itemvalue="Python.powerOnWithClicker" />
-        <item itemvalue="Python.viewGui" />
       </list>
     </recent_temporary>
   </component>
@@ -251,6 +253,21 @@
           <url>file://$PROJECT_DIR$/operations/operationsTypes/powerOnWithClicker.py</url>
           <line>16</line>
           <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hostPcTestEnvClient.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/operations/operationsTypes/sleep.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/operations/operationsTypes/turnOnWithLan.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="185" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

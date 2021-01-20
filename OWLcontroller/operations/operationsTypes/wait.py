@@ -7,8 +7,8 @@ class wait(object):
         pass
 
     @staticmethod
-    def runOp(client_socket, host):
-        print (" number of seconds to wait is " , host)
-        time.sleep(int(host))
+    def runOp(opParams):
+        print (" number of seconds to wait is " , opParams.paramForOperation)
+        time.sleep(int(opParams.paramForOperation))
         return 'waiting ended'
 

@@ -23,11 +23,11 @@ class runCommandViaCmd(object):
     #     return ('Received from server: ' + data)  # show the response in terminal
 
     @staticmethod
-    def runOp(client_socket, cmdCommand='ipconfig'):
+    def runOp(hostinfo):
 
-        df1 = {"operation": "runCommandViaCmd", "param": cmdCommand}
-        client_socket.sendall(json.dumps(df1).encode('utf-8'))  # encode the dict to JSON
-        data = client_socket.recv(1024).decode()  # receive response from the server
+        df1 = {"operation": "runCommandViaCmd", "param": hostinfo.paramForOperation}
+        hostinfo.socket.sendall(json.dumps(df1).encode('utf-8'))  # encode the dict to JSON
+        data = hostinfo.socket.recv(1024).decode()  # receive response from the server
 
         return ('Received from server: ' + data)  # show the response in terminal
 
