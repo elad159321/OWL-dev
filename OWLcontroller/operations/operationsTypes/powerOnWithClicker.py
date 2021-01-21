@@ -17,7 +17,7 @@ class powerOnWithClicker(operation):
         os.system("echo "+ powerOnWithClicker.CLICKER_CHANNEL_COMMANDS[hostinfo.channel][0] +" > " + hostinfo.com)
         time.sleep(0.5)
         os.system("echo "+ powerOnWithClicker.CLICKER_CHANNEL_COMMANDS[hostinfo.channel][1] +" > " + hostinfo.com)
-
+        return True
 # powerOnWithClicker.runOp('COM4', 1)
 # powerOnWithClicker.runOp('COM4', 2)
 # powerOnWithClicker.runOp('COM4', 3)

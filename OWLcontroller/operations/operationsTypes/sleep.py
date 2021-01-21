@@ -1,3 +1,5 @@
+import os
+
 from operations.operation import operation
 import json
 PING = 'ping '
@@ -9,13 +11,13 @@ class sleep(operation):
         pass
 
     @staticmethod
-    def runOp(hostinfo):
+    def runOp(opParams):
 
         messegeToServer = {"operation": "sleep", "param": SLEEP_COMMAND}
-        hostinfo.socket.sendall(json.dumps(messegeToServer).encode('utf-8'))  # encode the dict to JSON
-
-        # sending a ping in order to verify the shutdown
-        # pingCommand = PING + host
-        # if (os.system(pingCommand)) == 0:
-        #     print ("alive")
+        opParams.socket.sendall(json.dumps(messegeToServer).encode('utf-8'))  # encode the dict to JSON
+        pingCommand = PING + opParams.hostIP
+        while (os.system(pingCommand)) == 0:
+            print ("Host still alive")
+        if (os.system(pingCommand)) != 0:
+            print ("shoutdown was done")
         return

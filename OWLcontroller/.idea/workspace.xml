@@ -166,8 +166,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.controllerPc" />
-        <item itemvalue="Python.viewGui" />
         <item itemvalue="Python.turnOnWithLan" />
+        <item itemvalue="Python.viewGui" />
         <item itemvalue="Python.hostPcTestEnvClient" />
         <item itemvalue="Python.powerOnWithClicker" />
       </list>
@@ -261,18 +261,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/operations/operationsTypes/sleep.py</url>
-          <line>14</line>
+          <line>16</line>
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/operations/operationsTypes/turnOnWithLan.py</url>
-          <line>38</line>
+          <line>68</line>
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/operations/operationsTypes/hibernate.py</url>
-          <line>15</line>
+          <line>17</line>
           <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/operations/operationsTypes/turnOnWithLan.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="188" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

@@ -1,3 +1,5 @@
+import os
+
 from operations.operation import operation
 import json
 PING = 'ping '
@@ -16,8 +18,9 @@ class hibernate(operation):
         messegeFromServer = opParams.socket.recv(1024).decode()  # receive response from the server
         opParams.socket.close()
         # sending a ping in order to verify the shutdown
-        # pingCommand = PING + host
-        # if (os.system(pingCommand)) == 0:
-        #     print ("alive")
-
-        return ('Received from server: ' + messegeFromServer)  # show the response in terminal
+        pingCommand = PING + opParams.hostIP
+        while (os.system(pingCommand)) == 0:
+            print ("Host still alive")
+        if (os.system(pingCommand)) != 0:
+            print ("hibernate was done")
+            return ('Received from server: ' + messegeFromServer)  # show the response in terminal

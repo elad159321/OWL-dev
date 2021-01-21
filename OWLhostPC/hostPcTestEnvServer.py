@@ -7,7 +7,7 @@ import json
 class hostPcTestEnvServer():
 
     @staticmethod
-    def server_program():
+    def server():
         while True:
             # get the hostname
             host = socket.gethostname()
@@ -57,7 +57,7 @@ class hostPcTestEnvServer():
 
 if __name__ == '__main__':
     while True:
-        hostPcTestEnvServer.server_program()
+        hostPcTestEnvServer.server()
 
 
 
