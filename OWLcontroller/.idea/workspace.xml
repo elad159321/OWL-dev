@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8409466b-428c-4b80-a93c-b8849b26f934" name="Default Changelist" comment="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish">
-      <change beforePath="$PROJECT_DIR$/../OWLhostPC/hostPcTestEnvServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OWLhostPC/hostPcTestEnvServer.py" afterDir="false" />
-    </list>
+    <list default="true" id="8409466b-428c-4b80-a93c-b8849b26f934" name="Default Changelist" comment="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +274,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/hostPcTestEnvClient.py</url>
-          <line>85</line>
+          <line>86</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
       </breakpoints>

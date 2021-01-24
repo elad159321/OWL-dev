@@ -76,6 +76,7 @@ class hostPcTestEnvClient():
                 mappedOperations = allOperations()
                 opParams.paramForOperation = operation['param']
                 operationOutPut = mappedOperations.operationsImplement[operation['operation']].runOp(opParams)
+                print (operationOutPut)
 
             if operationOutPut == False:
                 break

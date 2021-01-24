@@ -6,8 +6,9 @@
 				"operation" : "runCommandViaCmd",
 				"param" : "ipconfig"
 			},
-			
 			"shutdown"
+			
+
 			
 		
 
