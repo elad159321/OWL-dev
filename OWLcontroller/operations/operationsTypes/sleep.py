@@ -19,5 +19,5 @@ class sleep(operation):
         while (os.system(pingCommand)) == 0:
             print ("Host still alive")
         if (os.system(pingCommand)) != 0:
-            print ("shoutdown was done")
-        return
+            print ("sleep was done")
+            return True

@@ -17,10 +17,11 @@ class hibernate(operation):
         opParams.socket.sendall(json.dumps(messegeToServer).encode('utf-8'))  # encode the dict to JSON
         messegeFromServer = opParams.socket.recv(1024).decode()  # receive response from the server
         opParams.socket.close()
+
         # sending a ping in order to verify the shutdown
         pingCommand = PING + opParams.hostIP
         while (os.system(pingCommand)) == 0:
             print ("Host still alive")
         if (os.system(pingCommand)) != 0:
             print ("hibernate was done")
-            return ('Received from server: ' + messegeFromServer)  # show the response in terminal
+            return True

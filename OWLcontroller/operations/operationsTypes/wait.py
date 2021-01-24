@@ -10,5 +10,5 @@ class wait(object):
     def runOp(opParams):
         print (" number of seconds to wait is " , opParams.paramForOperation)
         time.sleep(int(opParams.paramForOperation))
-        return 'waiting ended'
+        return True
 

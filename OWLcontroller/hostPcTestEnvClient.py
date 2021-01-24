@@ -75,7 +75,7 @@ class hostPcTestEnvClient():
                 operationOutPut = mappedOperations.operationsImplement[operation].runOp(opParams)
                 print(operationOutPut)
 
-            self.closeCommunication(clientSocket)
+            self.closeCommunication(opParams.socket)
 
 
 if __name__ == '__main__':

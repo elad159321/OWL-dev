@@ -12,7 +12,7 @@ class runDM(object):
     def runOp(opParams):
         messegeToServer = {"operation": "shutdown", "param": opParams.paramForOperation}
         opParams.socket.sendall(json.dumps(messegeToServer).encode('utf-8'))  # encode the dict to JSON
-        messegeFromServer = opParams.socket.recv(1024).decode()  # receive response from the server
+        #messegeFromServer = opParams.socket.recv(1024).decode()  # receive response from the server
 
 # TODO implement runDM
 

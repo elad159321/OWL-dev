@@ -9,16 +9,17 @@ class shutdown(operation):
         pass
 
     @staticmethod
-    def runOp(hostinfo):
+    def runOp(opParams):
 
         messegeToServer = {"operation": "shutdown", "param": SHUTDOWN_COMMAND}
-        hostinfo.socket.sendall(json.dumps(messegeToServer).encode('utf-8'))  # encode the dict to JSON
-        messegeFromServer = hostinfo.socket.recv(1024).decode()  # receive response from the server
+        opParams.socket.sendall(json.dumps(messegeToServer).encode('utf-8'))  # encode the dict to JSON
+        opParams.socket.close()
 
         # sending a ping in order to verify the shutdown
-        pingCommand = PING + hostinfo.hostIP
+        pingCommand = PING + opParams.hostIP
         while (os.system(pingCommand)) == 0:
             print ("Host still alive")
         if (os.system(pingCommand)) != 0:
             print ("shoutdown was done")
-        return ('Received from server: ' + messegeFromServer)  # show the response in terminal
+            opParams.socket.close()
+            return True
