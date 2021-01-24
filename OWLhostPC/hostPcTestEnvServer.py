@@ -31,7 +31,7 @@ class hostPcTestEnvServer():
             data = json.loads(data.decode('utf-8'))
             if isinstance(data, dict):
                 mappedOperations = allOperations()
-                data = mappedOperations.operationsImplement[data['operation']].runOp(data['param'])
+                data = mappedOperations.operationsImplement[data['operation']].runOp(data['param'],conn)
 
             elif isinstance(data, str):
                         mappedOperations = allOperations()
@@ -46,7 +46,7 @@ class hostPcTestEnvServer():
 
             print("from connected user: " + str(data))
             #data = input(' -> ')
-            conn.send(data.encode())  # send data to the client
+
 
         conn.close()  # close the connection
 

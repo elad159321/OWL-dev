@@ -1,7 +1,6 @@
 {
 		"operationsList":
 			[
-				"shutdown",
 			
 			{
 				"operation" : "runCommandViaCmd",

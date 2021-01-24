@@ -11,6 +11,8 @@ class runCommandViaCMD(object):
         return (type(self).__name__)
 
     @staticmethod
-    def runOp(userCommand):
-        return subprocess.run([userCommand], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    def runOp(userCommand, conn):
+
+        data = subprocess.run([userCommand], stdout=subprocess.PIPE).stdout.decode('utf-8')
+        conn.send(data.encode())  # send data to the client
         # os.system("shutdown /s /t 1")

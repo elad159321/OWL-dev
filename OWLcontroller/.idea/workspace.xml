@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8409466b-428c-4b80-a93c-b8849b26f934" name="Default Changelist" comment="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish" />
+    <list default="true" id="8409466b-428c-4b80-a93c-b8849b26f934" name="Default Changelist" comment="Parsing Legacy mode Exerciser and parsing Errinj mode Parser finish">
+      <change beforePath="$PROJECT_DIR$/../OWLhostPC/hostPcTestEnvServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OWLhostPC/hostPcTestEnvServer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OWLhostPC/operations/operationsTypes/runCommandViaCmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OWLhostPC/operations/operationsTypes/runCommandViaCmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OWLhostPC/operations/operationsTypes/runDM.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OWLhostPC/operations/operationsTypes/runDM.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +102,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="powerOnWithClicker" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="shutdown" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autoLatencyApp" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,7 +114,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/operations/operationsTypes/powerOnWithClicker.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/operations/operationsTypes/shutdown.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,10 +168,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.controllerPc" />
-        <item itemvalue="Python.turnOnWithLan" />
         <item itemvalue="Python.viewGui" />
+        <item itemvalue="Python.shutdown" />
+        <item itemvalue="Python.turnOnWithLan" />
         <item itemvalue="Python.hostPcTestEnvClient" />
-        <item itemvalue="Python.powerOnWithClicker" />
       </list>
     </recent_temporary>
   </component>
@@ -238,24 +242,9 @@
           <option name="timeStamp" value="174" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/controllerPc.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="180" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/operations/operationsTypes/shutdown.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="181" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/operations/operationsTypes/powerOnWithClicker.py</url>
           <line>18</line>
           <option name="timeStamp" value="182" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/hostPcTestEnvClient.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="183" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/operations/operationsTypes/sleep.py</url>
@@ -281,6 +270,16 @@
           <url>file://$PROJECT_DIR$/operations/operationsTypes/runCommandViaCmd.py</url>
           <line>31</line>
           <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/operations/operationsTypes/shutdown.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hostPcTestEnvClient.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="200" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

@@ -22,10 +22,15 @@ class hostPcTestEnvClient():
         CommunicationInfo = namedtuple('CommunicationInfo' , ['socket', 'hostIP'])
         port = hostPort  # socket server port number
         clientSocket = socket.socket()  # instantiate
-        clientSocket.connect((hostIp, port))  # connect to the server
+        try:
+            clientSocket.connect((hostIp, port))  # connect to the server
+        except socket.error as e:
+            print(e)
+            return False
         CommunicationInfo.socket =clientSocket
         CommunicationInfo.hostIP = hostIp
         return CommunicationInfo
+
 
     def closeCommunication(self, client_socket):
         client_socket.close()  # close the connection
@@ -56,6 +61,9 @@ class hostPcTestEnvClient():
 
         for operation in operations:
             CommunicationInfo = self.createCommunication(hostIP,port)
+            if CommunicationInfo == False:
+                print ("There is no socket connection")
+                break
             clientSocket = CommunicationInfo.socket
             opParams.socket = clientSocket
             opParams.hostIP = hostIP
@@ -63,17 +71,22 @@ class hostPcTestEnvClient():
             opParams.com = com
             opParams.channel = channel
             message = operation  # The messege to the server
-
+            operationOutPut = ''
             if isinstance(operation, dict):
                 mappedOperations = allOperations()
                 opParams.paramForOperation = operation['param']
                 operationOutPut = mappedOperations.operationsImplement[operation['operation']].runOp(opParams)
-                print (operationOutPut)
+
+            if operationOutPut == False:
+                break
 
             elif isinstance(operation, str):
                 mappedOperations = allOperations()
                 operationOutPut = mappedOperations.operationsImplement[operation].runOp(opParams)
                 print(operationOutPut)
+
+            if operationOutPut == False:
+                break
 
             self.closeCommunication(opParams.socket)
 
