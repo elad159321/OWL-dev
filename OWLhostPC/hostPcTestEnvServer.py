@@ -45,8 +45,8 @@ class hostPcTestEnvServer():
             #     #Temp check end
 
             print("from connected user: " + str(data))
-            data = input(' -> ')
-
+            #data = input(' -> ')
+            conn.send(data.encode())  # send data to the client
 
         conn.close()  # close the connection
 
