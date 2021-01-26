@@ -9,7 +9,7 @@ from operations.operationWithSocket import operationWithSocket
 class runCommandViaCmd(operationWithSocket):
     def getKey(self):
         ''' Returns operation's name '''
-        return (type(self).__name__)
+        return type(self).__name__
 
 
     def runOp(self,controllerPc,hostPc,opParams):
@@ -22,11 +22,9 @@ class runCommandViaCmd(operationWithSocket):
         data = socket.recv(1024).decode()  # receive response from the server
         socket.close()
         print ("done",data)
+        return data != ""  # show the response in terminal
 
-        if data != "":
-            return True  # show the response in terminal
-        else:
-            return False
+
 
         #message = input(" -> ")  # again send a messege to the server
 

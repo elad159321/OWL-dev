@@ -122,3 +122,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.idea/misc.xml
+
+*.iml
+
+*.xml
+
+OWLcontroller/UI/viewGui.py
