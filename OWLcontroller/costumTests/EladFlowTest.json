@@ -1,17 +1,15 @@
 {
 		"operationsList":
 			[
-			
+				"powerOnWithClicker",
 			{
-				"operation" : "runCommandViaCmd",
-				"param" : "ipconfig"
-			},
-			"shutdown"
-			
+				"name" : "runCommandViaCmd",
+				"params" : ["ipconfig"]
+			}
 
-			
-		
 
 			]
 			
 }
+
+

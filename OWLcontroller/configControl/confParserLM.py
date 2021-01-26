@@ -53,10 +53,10 @@ def findDir(dirNameFromUser):
 
 # Parser
 class confParserLM():
-    def __init__(self):
+    def __init__(self,defaultConfContent):
         # Legacy Mode configs paths
-        defaultConfContent = self.parseDefaultConf()
-        # self.legacyModeConfigFilesDirectory = getRootDirectory(defaultConfContent['legacyModePath'])
+        #TODO : first line here works, but variable isnt in use, second one dosnt work and the var is in use ... see whats up with this
+        self.legacyModeConfigFilesDirectory = getRootDirectory(defaultConfContent['legacyModePath'])
         self.lMConfFilesDirectory = findDir(defaultConfContent['legacyModePath']) # LM - Legacy Mode config files directory
 
     # Legacy mode
@@ -95,7 +95,7 @@ class confParserLM():
         testConfiguration.flowoperations = []
         for operation in sequenceFile['operationsList']:
             testConfiguration.flowoperations.append(operation)
-        print(testConfiguration.flowoperations)
+        # print(testConfiguration.flowoperations)
         return testConfiguration
 
     def addingParamsToConf(self, sectionParams,testConf,sectionName):
@@ -108,7 +108,7 @@ class confParserLM():
         legacyFlowOperationsTestsByGroups = self.insertGroupTotestsByGroup(groupName, legacyFlowOperationsTestsByGroups)
         legacyFlowOperationsTestsByGroups[groupName].append(testConf)
         # legacyFlowOperationTestsByStatus[testConf.testname] = testConf
-        print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!got into seuance stracture')
+        # print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!got into seuance stracture')
 
 
 
@@ -139,21 +139,10 @@ class confParserLM():
         return parseResults(legacyTestsByGroup, legacyFlowOperationsTestsByGroups)  # return the namedTuple contains both results dicts
 
 
-
-    def parseDefaultConf(self, defaultConfig='..\defaultConfiguration.json'):
-        # Opening JSON file
-        defaultConf = open(DEFAULT_CONF_FILE_PATH, encoding="utf8")
-        defaultConfContent = json.load(defaultConf)
-        defaultConf.close()
-        return defaultConfContent
-
-
-
-
 if __name__ == '__main__':
     # Tester for pharsing Legacy Config
 
-    dictsfromparsing = confParserLM().parseLMConf()
+    dictsfromparsing = confParserLM(0).parseLMConf()
 
     print ('test')
     print('testsByGroupLegacyFlowOperations', dictsfromparsing.legacyFlowOperationsTestsByGroups)
@@ -163,5 +152,5 @@ if __name__ == '__main__':
 
 
     # # Tester for default config parsing
-    confParserLM().parseDefaultConf()
+    confParserLM(0).parseDefaultConf()
 

@@ -9,10 +9,10 @@ import os
 # Errinj Mode
 ERRINJ_CONFIG_FILE_SUFFIX = ".cts"
 TEST_PARAM = "="
-# DEFAULT_CONF_FILE = '..\defaultConfiguration.json' When running directly from this file
-DEFAULT_CONF_FILE = 'defaultConfiguration.json' #when running from the controlPc
 
 
+
+# TODO: move all helper functions to another py file called fileOPHelperFuncs
 def cleanUpErrinjModeConfFile(line):
     return line.rstrip("\n").replace(";", "").replace('"', "").strip().split("=")
 
@@ -51,16 +51,13 @@ def findDir(dirNameFromUser):
 
 # Parser
 class confParserErrinjMode():
-    def __init__(self):
+    def __init__(self,defaultConfContent):
 
-        # Legacy Mode configs paths
-        defaultConfContent = self.parseDefaultConf()
         # Errinj mode configs paths
         self.errinjConfFilesPath = findDir(defaultConfContent['errinjModePath'])
         self.errinjConfFile = ConfigParser()
         self.errinjConfFile.read(self.errinjConfFilesPath)
 
-        # Errinj Mode
 
     def getFilesNames(self, path):
         return os.listdir(path)
@@ -95,19 +92,11 @@ class confParserErrinjMode():
         return parsingResults(testsByGroupErrinj)  # return the namedTuple contains both results dicts
 
 
-    def parseDefaultConf(self, defaultConfig='..\defaultConfiguration.json'):
-        # Opening JSON file
-
-        defaultConf = open(DEFAULT_CONF_FILE, encoding="utf8")
-        defaultConfContent = json.load(defaultConf)
-        defaultConf.close()
-        return defaultConfContent
-
 if __name__ == '__main__':
 
     # Tester for parsing errinj config
     print ('dirnames')
-    dirnames = confParserErrinjMode().parseErrinjConfFiles()
+    dirnames = confParserErrinjMode(0).parseErrinjConfFiles()
     for item in dirnames.testsByGroupErrinj.values():
         print(item)
 

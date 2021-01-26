@@ -11,15 +11,15 @@ from operations.operationsTypes.runCommandViaCmd import runCommandViaCmd
 
 
 class allOperations():
-    operationsImplement = {str : operation}
-    operationsImplement['runCommandViaCmd'] = runCommandViaCmd
-    operationsImplement['shutdown'] = shutdown
-    operationsImplement['sleep'] = sleep
-    operationsImplement['hibernate'] = hibernate
-    operationsImplement['wait'] = wait
-    operationsImplement['powerOnWithClicker'] = powerOnWithClicker
-    operationsImplement['turnOnWithLan'] = turnOnWithLan
-    operationsImplement['runDM'] = runDM
+    operationsImplementation = {str : operation}
+    operationsImplementation['runCommandViaCmd'] = runCommandViaCmd
+    operationsImplementation['shutdown'] = shutdown
+    operationsImplementation['sleep'] = sleep
+    operationsImplementation['hibernate'] = hibernate
+    operationsImplementation['wait'] = wait
+    operationsImplementation['powerOnWithClicker'] = powerOnWithClicker
+    operationsImplementation['turnOnWithLan'] = turnOnWithLan
+    operationsImplementation['runDM'] = runDM
 
 #
 # print (allOperations.operationsImplement)
